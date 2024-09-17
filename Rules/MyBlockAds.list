@@ -1,4 +1,4 @@
-# 2023-05-22 16:45
+# 2024-09-17 22:35
 
 # ======= A ======= #
 ## 阿里云
@@ -50,7 +50,7 @@ DOMAIN-KEYWORD, adservice.google.com.
 # 工商银行 开屏广告
 DOMAIN, pageviewp.icbc.com.cn
 # 广告联盟
-DOMAIN, is.snssdk.com
+#DOMAIN, is.snssdk.com
 DOMAIN, mi.gdt.qq.com
 DOMAIN, open.e.kuaishou.com
 DOMAIN-SUFFIX, pangolin-sdk-toutiao.com
