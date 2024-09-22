@@ -1,4 +1,4 @@
-// 2024-04-19 15:30
+// 2024-09-22 12:25
 
 const url = $request.url;
 const isResp = typeof $response !== "undefined";
@@ -237,14 +237,6 @@ switch (isResp) {
       body = JSON.stringify(obj);
     } catch (err) {
       console.log(`JavDB, 出现异常: ` + err);
-    }
-    break;
-  // MISSAV-播放弹窗
-  case /^https:\/\/missav\.com\/(dm\d+\/)?\w{2}\/[\w-]+/.test(url):
-    try {
-      body = body.replace(/if\x20?\(nextDirectUrl\)/g, "if (rucu6)").replace(/htmlAdIndexes\.push/g, "// htmlAdIndexes.push");
-    } catch (err) {
-      console.log(`MISSAV-播放弹窗, 出现异常: ` + err);
     }
     break;
   default:
