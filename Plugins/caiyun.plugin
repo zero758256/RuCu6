@@ -1,6 +1,7 @@
 #!name = 彩云天气
-#!desc = 只是为了看个天气而已。
+#!desc = 只是为了看个天气而已。(初次使用此插件，建议卸载彩云app，重新安装。)
 #!author = RuCu6[https://github.com/RuCu6]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/caiyun.png
 #!date = 2024-09-01 11:21:02
 
 [Rule]

@@ -1,6 +1,7 @@
 #!name = 知乎
-#!desc = 在知识的海洋里狗刨，建议卸载知乎app，重新安装。
+#!desc = 在知识的海洋里狗刨。(初次使用此插件，建议卸载知乎app，重新安装。)
 #!author = RuCu6[https://github.com/RuCu6], blackmatrix7[https://github.com/blackmatrix7]
+#!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/zhihu.png
 #!date = 2024-08-29 16:44:52
 
 [Rule]
