@@ -2,7 +2,7 @@
 #!desc = 在知识的海洋里狗刨。(初次使用此插件，建议卸载知乎app，重新安装。)
 #!author = RuCu6[https://github.com/RuCu6], blackmatrix7[https://github.com/blackmatrix7]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/zhihu.png
-#!date = 2024-08-29 16:44:52
+#!date = 2024-09-26 01:50
 
 [Rule]
 # 知乎
@@ -31,7 +31,7 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 ^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card reject
 
 # 搜索页 - 关键词、猜你想搜
-^https:\/\/api\.zhihu\.com\/search\/preset_words reject-dict
+^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words) reject-dict
 ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? response-body-replace-regex "recommend_queries":\{.+\} "recommend_queries":{}
 ^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(?:article|answer)\/\d+ reject-dict
 
