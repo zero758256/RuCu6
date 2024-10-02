@@ -2,7 +2,7 @@
 #!desc = 在知识的海洋里狗刨。
 #!author = RuCu6[https://github.com/RuCu6], blackmatrix7[https://github.com/blackmatrix7]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/zhihu.png
-#!date = 2024-09-26 01:50
+#!date = 2024-10-02 13:00
 
 [Rule]
 # 知乎
@@ -73,7 +73,7 @@ http-response ^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/re
 
 # 其他 - 服务器推送配置
 http-response ^https:\/\/appcloud2\.zhihu\.com\/v3\/config script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body = true, tag = 拦截服务器推送配置
-http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body = true, tag = 拦截服务器推送配置
+http-response ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\? script-path = https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body = true, tag = 拦截服务器推送配置
 
 [MITM]
 hostname = *.zhihu.com
