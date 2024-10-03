@@ -2,13 +2,13 @@
 #!desc = 移除网页广告。
 #!author = RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/webpage.png
-#!date = 2024-09-22 12:20
+#!date = 2024-10-04 01:25
 
 [Rewrite]
 # 桌面端请使用 https://google.com/ncr
 # 谷歌服务重定向 //*.google.cn
-^https:\/\/www\.google\.cn 302 https://www.google.com
-^https:\/\/translate\.google\.cn 302 https://translate.google.com
+^https?:\/\/www\.google\.cn 302 https://www.google.com
+^https?:\/\/translate\.google\.cn 302 https://translate.google.com
 
 # Avple 跳转弹窗 //asserts.avple.tv
 ^https:\/\/asserts\.avple\.tv\/file\/avple-images\/ad\.js reject
