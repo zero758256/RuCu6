@@ -2,7 +2,7 @@
 #!desc = 自用去广告插件, 以下app请使用单独插件: 高德地图, 哔哩哔哩, 网易云音乐, 微博, YouTube, 知乎。
 #!author = RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/myblockads.png
-#!date = 2024-10-04 02:00
+#!date = 2024-10-05 11:05
 
 [Rule]
 # ======= 0 ======= #
@@ -111,6 +111,7 @@ DOMAIN-SUFFIX, unityads.unity3d.com, REJECT
 DOMAIN-SUFFIX, v.smtcdns.com, REJECT
 DOMAIN-SUFFIX, zijieapi.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, -normal-lq.zijieapi.com, DIRECT
 DOMAIN-KEYWORD, ads.g.doubleclick, REJECT
 DOMAIN-KEYWORD, asiad.byteactivity, REJECT
 DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
