@@ -37,7 +37,7 @@ DOMAIN, v.20120714.xyz, Emby
 DOMAIN, cdn.misakaf.org, DIRECT
 DOMAIN, emby.misakaf.org, Emby
 DOMAIN, push-kr.misakaf.org, Emby
-IP-CIDR, 102.223.180.108/32, Emby
+IP-CIDR, 102.223.180.108/32, Emby, no-resolve
 
 # NMEmby
 DOMAIN, film.ohhhh.org, Emby
