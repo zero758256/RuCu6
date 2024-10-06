@@ -2,14 +2,15 @@
 #!desc = Emby服务器分流。
 #!author = RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/emby.png
-#!date = 2024-03-23 07:45
+#!date = 2024-10-03 02:20
 
 [Rule]
 # 江湖
 DOMAIN-SUFFIX, reddust.link, Emby
 
 # 垃圾影音
-DOMAIN, cf.xmsl.org, DIRECT
+DOMAIN, cf.emby.moe, Emby
+DOMAIN, cf.xmsl.org, Emby
 
 # 普拉斯影业
 DOMAIN, emby-best.xeton.dev, DIRECT
