@@ -2,11 +2,11 @@
 #!desc = 音乐的力量不是用来看广告的。
 #!author = Keywos[https://github.com/Keywos], RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/cloudmusic.png
-#!date = 2024-10-07 02:20
+#!date = 2024-10-07 02:50
+#!select = 开启共享会员, 是, 否
 #!input = music163_Cookie
 #!input = music163_MConfigInfo
 #!input = music163_UserAgent
-#!select = 开启共享会员, 是, 否
 #!select = 隐藏漫游标签, 是, 否
 #!select = 隐藏动态标签, 是, 否
 #!select = 隐藏推荐标签, 是, 否
