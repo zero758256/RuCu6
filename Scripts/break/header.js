@@ -9,7 +9,7 @@ if (isNetEase) {
     $persistentStore.read("RuCu6_Music163_MConfigInfo") === undefined ||
     $persistentStore.read("RuCu6_Music163_MConfigInfo") === null
   ) {
-    $notification.post("脚本错误", "参数缺失", "请在插件内填入数据");
+    $notification.post("网易云音乐遇到问题", "参数缺失", "请在插件内填入会员数据");
     $done({});
   } else {
     header["cookie"] = $persistentStore.read("RuCu6_Music163_Cookie");
