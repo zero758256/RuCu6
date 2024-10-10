@@ -2,7 +2,7 @@
 #!desc = 音乐的力量不是用来看广告的。
 #!author = Keywos[https://github.com/Keywos], RuCu6[https://github.com/RuCu6]
 #!icon = https://raw.githubusercontent.com/RuCu6/Loon/main/Icons/app/cloudmusic.png
-#!date = 2024-10-08 02:35
+#!date = 2024-10-11 01:15
 #!input = RuCu6_Music163_Cookie
 #!input = RuCu6_Music163_MConfigInfo
 #!input = RuCu6_Music163_UserAgent
@@ -32,6 +32,9 @@ DOMAIN, ipv4.music.163.com, REJECT
 DOMAIN, ipv6.music.163.com, REJECT
 
 [Rewrite]
+# 网易通用
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(?:batch|v2\/resource\/comment\/floor\/get|homepage\/block\/page|link\/home\/framework\/tab|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-replace x-aeapi false
+
 # 开屏广告
 ^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(ocpc\/)?ad\/ reject-dict
 
@@ -44,7 +47,6 @@ DOMAIN, ipv6.music.163.com, REJECT
 
 # 搜索页 搜索词 热搜卡片 猜你喜欢 我的应用下方提醒
 ^https?:\/\/interface\d?\.music\.163\.com\/w?eapi\/(?:activity\/bonus\/playpage\/time\/query|resource-exposure\/|search\/(?:chart\/|default\/|rcmd\/keyword\/|specialkeyword\/)) reject-dict
-^https?:\/\/interface\d?\.music\.163\.com\/e?api\/(?:batch|v2\/resource\/comment\/floor\/get|homepage\/block\/page|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-del x-aeapi
 
 # 主页播客推荐
 ^https:\/\/interface\d\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend reject-dict
