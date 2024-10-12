@@ -1,4 +1,4 @@
-// 2024-10-12 04:00
+// 2024-10-12 12:50
 
 const url = $request.url;
 if (!$response) $done({});
@@ -28,6 +28,7 @@ if (url.includes("/mtop.idle.user.page.my.adapter/")) {
     obj.data.container.sections = newSections;
   }
 } else if (url.includes("/mtop.taobao.idlehome.home.nextfresh/")) {
+  delete obj.data.bannerReturnDO; // 首页横幅
   // 首页信息流
   if (obj?.data?.sections?.length > 0) {
     obj.data.sections = obj.data.sections.filter(
@@ -59,6 +60,11 @@ if (url.includes("/mtop.idle.user.page.my.adapter/")) {
       newLists.push(list);
     }
     obj.data.circleList = newLists;
+  }
+} else if (url.includes("/mtop.taobao.idlemtopsearch.search/")) {
+  // 搜索结果广告
+  if (obj?.data?.resultList?.length > 0) {
+    obj.data.resultList = obj.data.resultList.filter((i) => i?.data?.item?.main?.exContent?.isAliMaMaAD !== "true");
   }
 }
 
