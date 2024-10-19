@@ -1,4 +1,4 @@
-// 2024-10-15 11:00
+// 2024-10-19 12:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -120,6 +120,9 @@ if (url.includes("/x/resource/show/tab/v2")) {
   if (obj?.data?.items?.length > 0) {
     // 白名单
     obj.data.items = obj.data.items.filter((i) => i?.card_goto === "av");
+  }
+  if (obj?.data?.config?.toast?.has_toast) {
+    obj.data.config.toast.has_toast = false;
   }
 } else if (url.includes("/x/v2/feed/index/story")) {
   // 竖屏模式信息流
