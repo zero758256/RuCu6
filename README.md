@@ -1,5 +1,2 @@
-# Loon
-配置文件链接：
-```Java
-https://raw.githubusercontent.com/RuCu6/Loon/main/Loon.conf
-```
+# RuCu6
+这傻逼喜欢删库跑路，有备无患
