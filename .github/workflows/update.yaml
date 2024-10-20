@@ -5,8 +5,8 @@ on:
   push:
     paths:
       - '.github/workflows/update.yaml'
-  schedule:
-    - cron: '0 16 * * *'  # Runs at 16:00 UTC every day, which is 00:00 UTC+8
+  # schedule:
+    # - cron: '0 16 * * *'  # Runs at 16:00 UTC every day, which is 00:00 UTC+8
 
 jobs:
   sync-and-modify:
