@@ -33,11 +33,11 @@ jobs:
       - name: Fetch Upstream
         run: |
           git fetch upstream
-          git checkout master
+          git checkout main
 
       # Step 5: Merge changes from upstream, favoring their changes in conflicts
       - name: Merge Upstream Changes
-        run: git merge upstream/master --strategy-option theirs
+        run: git merge upstream/main --strategy-option theirs
 
       # Step 6: Modify files
       - name: Modify Files Excluding Markdown Files
