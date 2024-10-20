@@ -46,13 +46,10 @@ jobs:
       # Step 7: Check for changes and commit if any
       - name: Commit and Push Changes
         run: |
+          if [ -n "$(git status --porcelain)" ]; then
             git add .
             git commit -m "Sync from upstream and modify files"
             git push origin master
-          # if [ -n "$(git status --porcelain)" ]; then
-          #   git add .
-          #   git commit -m "Sync from upstream and modify files"
-          #   git push origin master
-          # else
-          #   echo "No changes to commit"
-          # fi
+          else
+            echo "No changes to commit"
+          fi
