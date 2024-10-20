@@ -37,7 +37,7 @@ jobs:
 
       # Step 5: Merge changes from upstream, favoring their changes in conflicts
       - name: Merge Upstream Changes
-        run: git merge upstream/main --strategy-option theirs
+        run: git merge upstream/main --allow-unrelated-histories --strategy-option theirs
 
       # Step 6: Modify files
       - name: Modify Files Excluding Markdown Files
